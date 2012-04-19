@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA0B8CCF154021F100245569 /* TimeTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0B8CCE154021F100245569 /* TimeTextField.m */; };
+		BA7AB1D7153C5B1D00075B99 /* App_Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = BA7AB1D6153C5B1D00075B99 /* App_Icon.icns */; };
+		BAFB3876153C187E008EF20A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFB3875153C187E008EF20A /* Cocoa.framework */; };
+		BAFB3880153C187E008EF20A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAFB387E153C187E008EF20A /* InfoPlist.strings */; };
+		BAFB3882153C187E008EF20A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFB3881153C187E008EF20A /* main.m */; };
+		BAFB3886153C187E008EF20A /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BAFB3884153C187E008EF20A /* Credits.rtf */; };
+		BAFB3889153C187E008EF20A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFB3888153C187E008EF20A /* AppDelegate.m */; };
+		BAFB388C153C187E008EF20A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAFB388A153C187E008EF20A /* MainMenu.xib */; };
+		BAFB38AA153C4151008EF20A /* CMus.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFB38A9153C4151008EF20A /* CMus.m */; };
+		BAFB38AE153C55B3008EF20A /* HIDRemote.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFB38AD153C55B3008EF20A /* HIDRemote.m */; };
+		FFE3D2B3153E32BB005574BB /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFE3D2B2153E32BB005574BB /* IOKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BA0B8CCD154021F100245569 /* TimeTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTextField.h; sourceTree = "<group>"; };
+		BA0B8CCE154021F100245569 /* TimeTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTextField.m; sourceTree = "<group>"; };
+		BA7AB1D6153C5B1D00075B99 /* App_Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = App_Icon.icns; sourceTree = "<group>"; };
+		BAFB3871153C187E008EF20A /* CMusRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CMusRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAFB3875153C187E008EF20A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BAFB3878153C187E008EF20A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BAFB3879153C187E008EF20A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BAFB387A153C187E008EF20A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BAFB387D153C187E008EF20A /* CMusRemote-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CMusRemote-Info.plist"; sourceTree = "<group>"; };
+		BAFB387F153C187E008EF20A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BAFB3881153C187E008EF20A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BAFB3883153C187E008EF20A /* CMusRemote-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CMusRemote-Prefix.pch"; sourceTree = "<group>"; };
+		BAFB3885153C187E008EF20A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		BAFB3887153C187E008EF20A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BAFB3888153C187E008EF20A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BAFB388B153C187E008EF20A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BAFB38A8153C4151008EF20A /* CMus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CMus.h; sourceTree = "<group>"; };
+		BAFB38A9153C4151008EF20A /* CMus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CMus.m; sourceTree = "<group>"; };
+		BAFB38AC153C55B3008EF20A /* HIDRemote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HIDRemote.h; sourceTree = "<group>"; };
+		BAFB38AD153C55B3008EF20A /* HIDRemote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HIDRemote.m; sourceTree = "<group>"; };
+		FFE3D2B2153E32BB005574BB /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAFB386E153C187E008EF20A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFE3D2B3153E32BB005574BB /* IOKit.framework in Frameworks */,
+				BAFB3876153C187E008EF20A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAFB3866153C187D008EF20A = {
+			isa = PBXGroup;
+			children = (
+				FFE3D2B2153E32BB005574BB /* IOKit.framework */,
+				BA7AB1D6153C5B1D00075B99 /* App_Icon.icns */,
+				BAFB38AB153C55B3008EF20A /* HIDRemote */,
+				BAFB387B153C187E008EF20A /* CMusRemote */,
+				BAFB3874153C187E008EF20A /* Frameworks */,
+				BAFB3872153C187E008EF20A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAFB3872153C187E008EF20A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB3871153C187E008EF20A /* CMusRemote.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAFB3874153C187E008EF20A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB3875153C187E008EF20A /* Cocoa.framework */,
+				BAFB3877153C187E008EF20A /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BAFB3877153C187E008EF20A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB3878153C187E008EF20A /* AppKit.framework */,
+				BAFB3879153C187E008EF20A /* CoreData.framework */,
+				BAFB387A153C187E008EF20A /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BAFB387B153C187E008EF20A /* CMusRemote */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB3887153C187E008EF20A /* AppDelegate.h */,
+				BAFB3888153C187E008EF20A /* AppDelegate.m */,
+				BAFB388A153C187E008EF20A /* MainMenu.xib */,
+				BAFB387C153C187E008EF20A /* Supporting Files */,
+				BAFB38A8153C4151008EF20A /* CMus.h */,
+				BAFB38A9153C4151008EF20A /* CMus.m */,
+				BA0B8CCD154021F100245569 /* TimeTextField.h */,
+				BA0B8CCE154021F100245569 /* TimeTextField.m */,
+			);
+			name = CMusRemote;
+			path = CMusRemote;
+			sourceTree = "<group>";
+		};
+		BAFB387C153C187E008EF20A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB387D153C187E008EF20A /* CMusRemote-Info.plist */,
+				BAFB387E153C187E008EF20A /* InfoPlist.strings */,
+				BAFB3881153C187E008EF20A /* main.m */,
+				BAFB3883153C187E008EF20A /* CMusRemote-Prefix.pch */,
+				BAFB3884153C187E008EF20A /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAFB38AB153C55B3008EF20A /* HIDRemote */ = {
+			isa = PBXGroup;
+			children = (
+				BAFB38AC153C55B3008EF20A /* HIDRemote.h */,
+				BAFB38AD153C55B3008EF20A /* HIDRemote.m */,
+			);
+			path = HIDRemote;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAFB3870153C187E008EF20A /* CMusRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAFB388F153C187E008EF20A /* Build configuration list for PBXNativeTarget "CMusRemote" */;
+			buildPhases = (
+				BAFB386D153C187E008EF20A /* Sources */,
+				BAFB386E153C187E008EF20A /* Frameworks */,
+				BAFB386F153C187E008EF20A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CMusRemote;
+			productName = CMusRemote;
+			productReference = BAFB3871153C187E008EF20A /* CMusRemote.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAFB3868153C187D008EF20A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = MWLabs;
+			};
+			buildConfigurationList = BAFB386B153C187D008EF20A /* Build configuration list for PBXProject "CMusRemote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BAFB3866153C187D008EF20A;
+			productRefGroup = BAFB3872153C187E008EF20A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAFB3870153C187E008EF20A /* CMusRemote */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAFB386F153C187E008EF20A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAFB3880153C187E008EF20A /* InfoPlist.strings in Resources */,
+				BAFB3886153C187E008EF20A /* Credits.rtf in Resources */,
+				BAFB388C153C187E008EF20A /* MainMenu.xib in Resources */,
+				BA7AB1D7153C5B1D00075B99 /* App_Icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAFB386D153C187E008EF20A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAFB3882153C187E008EF20A /* main.m in Sources */,
+				BAFB3889153C187E008EF20A /* AppDelegate.m in Sources */,
+				BAFB38AA153C4151008EF20A /* CMus.m in Sources */,
+				BAFB38AE153C55B3008EF20A /* HIDRemote.m in Sources */,
+				BA0B8CCF154021F100245569 /* TimeTextField.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BAFB387E153C187E008EF20A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAFB387F153C187E008EF20A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BAFB3884153C187E008EF20A /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAFB3885153C187E008EF20A /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		BAFB388A153C187E008EF20A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAFB388B153C187E008EF20A /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAFB388D153C187E008EF20A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		BAFB388E153C187E008EF20A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		BAFB3890153C187E008EF20A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CMusRemote/CMusRemote-Prefix.pch";
+				INFOPLIST_FILE = "CMusRemote/CMusRemote-Info.plist";
+				PRODUCT_NAME = CMusRemote;
+				SDKROOT = macosx10.6;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BAFB3891153C187E008EF20A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CMusRemote/CMusRemote-Prefix.pch";
+				INFOPLIST_FILE = "CMusRemote/CMusRemote-Info.plist";
+				PRODUCT_NAME = CMusRemote;
+				SDKROOT = macosx10.6;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAFB386B153C187D008EF20A /* Build configuration list for PBXProject "CMusRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAFB388D153C187E008EF20A /* Debug */,
+				BAFB388E153C187E008EF20A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAFB388F153C187E008EF20A /* Build configuration list for PBXNativeTarget "CMusRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAFB3890153C187E008EF20A /* Debug */,
+				BAFB3891153C187E008EF20A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAFB3868153C187D008EF20A /* Project object */;
+}

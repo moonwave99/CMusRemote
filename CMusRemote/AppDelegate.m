@@ -35,7 +35,7 @@
     [statusItem setTitle:@"C*"];
     
     seekReverse = NO;    
- 
+    
     cmus = [[CMus alloc] initWithCommandPath:@"/usr/local/bin/cmus-remote"];
     [self updateView];    
     [self performSelectorInBackground:@selector(updateViewJob) withObject:nil];  
@@ -44,13 +44,18 @@
 
 -(void) updateViewJob
 {
+    
+    NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];  
+    
     while(YES){
-
+        
         [cmus updateStatus];
         [self updateView];        
         [NSThread sleepForTimeInterval:1];        
         
     }
+    
+    [pool release];
     
 }
 
@@ -58,7 +63,7 @@
 {
     
     if(cmus.running){
-     
+        
         [playButton setTitle: [[cmus.status valueForKey:@"status"] isEqualToString:@"playing"] ? @"▮▮" : @"▶"];
         
         [volSlider setIntegerValue: [[cmus.status valueForKey:@"vol_left"] intValue]];
@@ -86,7 +91,7 @@
 
 -(void) startRemote
 {
-
+    
     // HID Remote has not been started yet. Start it.
     HIDRemoteMode remoteMode = kHIDRemoteModeExclusive;
     
@@ -117,7 +122,7 @@
         }
     }	
     else{
-
+        
         [hidRemote startRemoteControl:remoteMode];
         
     }
@@ -126,14 +131,14 @@
 
 -(IBAction)toggleStatusWindow:(id)sender
 {
-
+    
     [window isVisible] == YES ? [window orderOut:self] : [window makeKeyAndOrderFront:nil];
     
 }
 
 -(IBAction)playerAction:(id)sender
 {
-
+    
     switch([sender tag]){
             
         case 0:
@@ -178,8 +183,8 @@
 }
 
 -(IBAction)seekAction:(id)sender {
-
-
+    
+    
     [cmus seekTo: (int)([[cmus.status valueForKey:@"duration"] intValue] * [sender intValue] * 0.01) ];
     [self updateView];
     
@@ -195,7 +200,7 @@
 #pragma mark -- Remote control code --
 - (void)setupRemote
 {
-
+    
 	if (!hidRemote){
 		
         if ((hidRemote = [[HIDRemote alloc] init]) != nil){
@@ -210,7 +215,7 @@
 
 - (NSString *)buttonNameForButtonCode:(HIDRemoteButtonCode)buttonCode
 {
-
+    
 	switch (buttonCode)
 	{
 		case kHIDRemoteButtonCodeUp:
@@ -307,11 +312,11 @@ fromHardwareWithAttributes:(NSMutableDictionary *)attributes
             case kHIDRemoteButtonCodeUp:
                 
                 [cmus volumeStep: YES : 5];
-
+                
                 break;
                 
             case kHIDRemoteButtonCodeDown:
-
+                
                 [cmus volumeStep: NO : 5];       
                 
                 break;
@@ -319,11 +324,11 @@ fromHardwareWithAttributes:(NSMutableDictionary *)attributes
             case kHIDRemoteButtonCodeLeft:
                 
                 [cmus prev];
-
+                
                 break;
                 
             case kHIDRemoteButtonCodeRight:
-
+                
                 [cmus next];
                 
                 break;
@@ -341,49 +346,49 @@ fromHardwareWithAttributes:(NSMutableDictionary *)attributes
                 }
                 
                 [playButton setTitle: [[cmus.status valueForKey:@"status"] isEqualToString:@"playing"] ? @"▮▮" : @"▶" ];                
-
+                
                 break;
                 
             case kHIDRemoteButtonCodePlay:
-
+                
                 break;
                 
             case kHIDRemoteButtonCodeMenu:
                 
                 [self toggleStatusWindow:nil];
-
+                
                 break;
                 
             case kHIDRemoteButtonCodeUpHold:
                 
                 [cmus volume:100];
-
+                
                 break;
                 
             case kHIDRemoteButtonCodeDownHold:
-
+                
                 [cmus volume:0];                
                 
                 break;
                 
             case kHIDRemoteButtonCodeLeftHold:
-
+                
                 break;
                 
             case kHIDRemoteButtonCodeRightHold:
-
+                
                 break;
                 
             case kHIDRemoteButtonCodeCenterHold:
-
+                
                 break;
                 
             case kHIDRemoteButtonCodePlayHold:
-
+                
                 break;
                 
             case kHIDRemoteButtonCodeMenuHold:
-
+                
                 break;
                 
             default:
@@ -407,7 +412,7 @@ fromHardwareWithAttributes:(NSMutableDictionary *)attributes
 
 - (void)cleanupRemote
 {
-
+    
 	if ([hidRemote isStarted]){
         
         [hidRemote stopRemoteControl];
@@ -425,10 +430,10 @@ fromHardwareWithAttributes:(NSMutableDictionary *)attributes
     NSInteger minutes = (int)(seconds / 60);
     
     return [NSString stringWithFormat:@"%d:%@%d",
-        minutes,
-        [NSString stringWithFormat:@"%@", seconds % 60 < 10 ? @"0" : @""],
-        seconds % 60
-    ];
+            minutes,
+            [NSString stringWithFormat:@"%@", seconds % 60 < 10 ? @"0" : @""],
+            seconds % 60
+            ];
     
 }
 

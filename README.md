@@ -22,6 +22,8 @@ Works in **10.6** / **10.7** as far as I tested.
 
 If you have volume adjusting issues, you'll have to fix your ```~/.cmus/autosave``` settings somehow [I did months ago and I don't remember what I changed right now, sorry].
 
+In cmus, type :set softvol=true to be able to adjust the volume via the app.
+
 You can include the ```CMus.h``` / ```CMus.m``` files in your project if you need cmus bindings.
 
 Well that's it, long live cmus!
